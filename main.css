@@ -1,0 +1,107 @@
+*{margin: 0;padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* --------------------header-------------------- */
+.header {
+    height: auto;
+}
+.logo {
+    height: auto;
+    padding: 150px 60px 50px 60px;
+}
+.logo img {
+    width: 100%;
+}
+
+/* --------------------section-------------------- */
+
+.wrap {
+    padding: 0 20px;
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+section {
+    height: auto;
+    color: #666666;
+}
+section input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #9f9f9f;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 3px;
+    font-size: 18px;
+} 
+section .login {
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+} 
+section .login a {color: white; text-decoration: none;}
+section .info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom {
+    margin-top: 150px;
+    height: auto;
+}
+.bottom .naver {
+    height: 45px;
+    background:#61ca6d;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    margin-bottom: 10px;
+}
+.bottom .naver i {margin-right: 10px;}
+.bottom .kakao {
+    height: 45px;
+    background:#f9e000;
+    color: #381e1f;
+    text-align: center;
+    line-height: 45px;
+}
+.bottom .kakao i {margin-right: 10px;}
+.to_main {
+    width: 100%;
+    height: 40px;
+  }
+  a {text-decoration: none;}
+
+  .to_main p,
+  .to_main i {
+      height: 25px;
+      color: #666666;
+      text-align: center;
+      line-height: 25px;
+      margin-top: 10px;
+  }
+  .to_main i {margin-right: 10px;}
+
+/* ---------------top button--------------- */
+a.return-top { 
+    width: 30px;
+    height: 30px;
+    position:fixed; 
+    right:20px; 
+    bottom:20px; 
+    z-index:998; 
+    color: #333;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+a.return-top i {
+    font-size: 25px;
+    line-height: 30px;
+}

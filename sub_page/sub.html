@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub_page</title>
+    <link rel="stylesheet" href="./sub.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="innerheader">
+    <div class="logo"><a href="../main_page/main.html"><img src="../img/logo_img.jpg" alt=""></a></div> <!--logo-->
+
+    <input type="checkbox" id="search">
+    <input type="checkbox" id="hamBtn">
+            
+    <label for="search" class="searchOpen"><i class="xi-search"></i></label>
+    <label for="search" class="searchClose"><i class="xi-close"></i></label>
+    <label for="search" class="bg">
+        <div class="search">
+            <div class="search01">
+                <input type="searchbox" placeholder="작가명 또는 작품명 검색">
+                <button><i class="xi-search"></i></button>
+            </div>
+            </div>
+    </label>
+    
+    
+            
+    <label for="hamBtn" class="hamOpen"><i class="xi-bars"></i></label>
+    <label for="hamBtn" class="hamClose"><i class="xi-close"></i></label>
+            
+    <div class="menu">
+    <div class="menu01">
+        <a href="../index.html">로그인</a>
+        <a href="../index.html">회원가입</a>
+        <a href="../sub_page02/sub02.html">마이페이지</a>
+    </div> <!--menu01-->
+    <ul class="lnb">
+        <li><a href="../main_page/main.html">홈</a></li>
+        <li><a href="#">미술품 경매</a></li>
+        <li><a href="#">온라인 전시장</a></li>
+        <li><a href="#">경매소개</a></li>
+        <li><a href="#">커뮤니티</a></li>
+        <li><a href="#">문의사항</a></li>
+    </ul>
+    <div class="menu02">
+        <a href="#">언어</a>
+        <a href="#">Language</a>
+    </div> <!--menu02-->
+    </div> <!--menu-->
+    </div> <!--innerheader-->
+    </header>
+
+    <section>
+        
+    <div class="title">
+            <p>미술품 경매</p>
+    </div>
+          
+<input type="radio" id="tab01" name="radio" checked>
+<input type="radio" id="tab02" name="radio">
+
+<div class="label">
+    <label for="tab01" class="lab01">진행중인 경매</label>
+    <label for="tab02" class="lab02">종료된 경매</label>
+</div>
+
+<!-- <div class="top_box">
+    <input type="checkbox" id="filter">
+
+    <label for="filter" class="open">
+        <i class="xi-filter"></i><p>세부검색</p>
+    </label>
+    <label for="filter" class="close">
+        <i class="xi-close"></i>
+    </label>
+
+    <div class="filter_box">
+        세부검색
+    </div>
+</div> -->
+<!--top_box-->
+
+<select name="filter" id="filter">
+    <option value=""selected></i>세부검색</option>
+    <option value="low_price">낮은 가격순</option>
+    <option value="high_price">높은 가격순</option>
+    <option value="popular">인기순</option>
+    <option value="sold">판매량순</option>
+</select>
+
+<div class="sheet">
+    <div class="sheet01">
+
+        <ul class="box01">
+            <li>
+               <a href="../detail_page/detail.html"><img src="../img/img02.jpg" alt=""></a>
+               <section class="text01">
+                <ul class="text_box01">
+                    <li>김영민</li>
+                    <li>동트는 아침바다 마음에 에너지</li>
+                    <li>돌가루에 혼합 2021</li>
+                    <li>33.3cm x 24.2cm (4F)</li>
+                    <input type="checkbox" id="heart">
+                    <label for="heart" class="empty"><i class="xi-heart-o"></i></label>
+                    <label for="heart" class="full"><i class="xi-heart"></i></label>
+                </ul>
+                <ul class="price">
+                    <li>시작가</li>
+                    <li>KRW 100,000</li>
+                </ul>
+                <ul class="price02">
+                    <li>현재가</li>
+                    <li>KRW 400,000</li>
+                </ul>
+                <p>마감 04-21 오전 11:30</p>
+            </section><!--text01-->
+            </li>       
+      </ul> <!--box01-->
+        <ul class="box01">
+            <li>
+                <a href="#"><img src="../img/img01.jpg" alt=""></a>
+               <section class="text01">
+                <ul class="text_box01">
+                    <li>신범승</li>
+                    <li>夕(석)</li>
+                    <li>캔버스에 유채 1987</li>
+                    <li>41cm x 31.8cm (6F)</li>
+                </ul>
+                <ul class="price">
+                    <li>시작가</li>
+                    <li>KRW 700,000</li>
+                </ul>
+                <ul class="price02">
+                    <li>현재가</li>
+                    <li>KRW 700,000</li>
+                </ul>
+                <p>마감 04-21 오전 11:30</p>
+            </section><!--text01-->
+            </li>       
+      </ul> <!--box01-->
+        <ul class="box01">
+            <li>
+                <a href="#"><img src="../img/img03.jpg" alt=""></a>
+               <section class="text01">
+                <ul class="text_box01">
+                    <li>전철수</li>
+                    <li>다자다복(多子多福) </li>
+                    <li>한지에 수묵 2018</li>
+                    <li>68cm x 60cm (20호)</li>
+                </ul>
+                <ul class="price">
+                    <li>시작가</li>
+                    <li>KRW 500,000</li>
+                </ul>
+                <ul class="price02">
+                    <li>현재가</li>
+                    <li>KRW 500,000</li>
+                </ul>
+                <p>마감 04-21 오전 11:30</p>
+            </section><!--text01-->
+            </li>       
+      </ul> <!--box01-->
+        <ul class="box01">
+            <li>
+                <a href="#"><img src="../img/img04.jpg" alt=""></a>
+               <section class="text01">
+                <ul class="text_box01">
+                    <li>이경미</li>
+                    <li>카멜레온 12</li>
+                    <li>캔버스에 아크릴 (글래스) 2016</li>
+                    <li>30cm x 26cm (6F)</li>
+                </ul>
+                <ul class="price">
+                    <li>시작가</li>
+                    <li>KRW 150,000</li>
+                </ul>
+                <ul class="price02">
+                    <li>현재가</li>
+                    <li>KRW 350,000</li>
+                </ul>
+                <p>마감 04-21 오전 11:30</p>
+            </section><!--text01-->
+            </li>       
+      </ul> <!--box01-->
+        <ul class="box01">
+            <li>
+                <a href="#"><img src="../img/img05.jpg" alt=""></a>
+               <section class="text01">
+                <ul class="text_box01">
+                    <li>김병길</li>
+                    <li>정지하지 않는 물상</li>
+                    <li>한지에 혼합 2021</li>
+                    <li>53cm x 45.5cm (10F)</li>
+                </ul>
+                <ul class="price">
+                    <li>시작가</li>
+                    <li>KRW 300,000</li>
+                </ul>
+                <ul class="price02">
+                    <li>현재가</li>
+                    <li>KRW 300,000</li>
+                </ul>
+                <p>마감 04-21 오전 11:30</p>
+            </section><!--text01-->
+            </li>       
+      </ul> <!--box01-->
+        <ul class="box01">
+            <li>
+                <a href="#"><img src="../img/img06.jpg" alt=""></a>
+               <section class="text01">
+                <ul class="text_box01">
+                    <li>김길상</li>
+                    <li>여심</li>
+                    <li>캔버스에 유채 2021</li>
+                    <li>53cm x 41cm (10P)</li>
+                </ul>
+                <ul class="price">
+                    <li>시작가</li>
+                    <li>KRW 900,000</li>
+                </ul>
+                <ul class="price02">
+                    <li>현재가</li>
+                    <li>KRW 900,000</li>
+                </ul>
+                <p>마감 04-21 오전 11:30</p>
+            </section><!--text01-->
+            </li>       
+      </ul> <!--box01-->
+</div> <!--sheet01-->
+            
+
+<div class="sheet02">
+
+    <ul class="box01">
+        <li>
+           <a href="#"><img src="../img/end01.jpg" alt=""></a>
+           <section class="text01">
+            <ul class="text_box01">
+                <li>이동업</li>
+                <li>가을 풍경</li>
+                <li>캔버스에 유채 2013</li>
+                <li>65cm x 45.5cm</li>
+            </ul>
+            <p>경매 종료</p>
+        </section><!--text01-->
+        </li>       
+  </ul> <!--box01-->
+
+    <ul class="box01">
+        <li>
+           <a href="#"><img src="../img/end02.jpg" alt=""></a>
+           <section class="text01">
+            <ul class="text_box01">
+                <li>최정길</li>
+                <li>중국 소주풍경</li>
+                <li>캔버스에 유채 2021</li>
+                <li>53cm x 41cm</li>
+            </ul>
+            <p>경매 종료</p>
+        </section><!--text01-->
+        </li>       
+  </ul> <!--box01-->
+
+  <ul class="box01">
+    <li>
+       <a href="#"><img src="../img/end03.jpg" alt=""></a>
+       <section class="text01">
+        <ul class="text_box01">
+            <li>박용섭</li>
+            <li>꽃향기 속으로</li>
+            <li>돌가루에 아크릴 2021</li>
+            <li>53cm x 45.5cm (10F)</li>
+        </ul>
+        <p>경매 종료</p>
+    </section><!--text01-->
+    </li>       
+</ul> <!--box01-->
+
+<ul class="box01">
+    <li>
+       <a href="#"><img src="../img/end04.jpg" alt=""></a>
+       <section class="text01">
+        <ul class="text_box01">
+            <li>아지조브.A(Radik azizov)</li>
+            <li>황혼</li>
+            <li>캔버스에 유채 2007</li>
+            <li>45cm x 55cm (10F)</li>
+        </ul>
+        <p>경매 종료</p>
+    </section><!--text01-->
+    </li>       
+</ul> <!--box01-->
+
+<ul class="box01">
+    <li>
+       <a href="#"><img src="../img/end05.jpg" alt=""></a>
+       <section class="text01">
+        <ul class="text_box01">
+            <li>셀레 바야르바타르(Selee BAYARBAATAR)</li>
+            <li>순록</li>
+            <li>캔버스에 유채 2007</li>
+            <li>73cm x 60cm (20F)</li>
+        </ul>
+        <p>경매 종료</p>
+    </section><!--text01-->
+    </li>       
+</ul> <!--box01-->
+
+<ul class="box01">
+    <li>
+       <a href="#"><img src="../img/end06.jpg" alt=""></a>
+       <section class="text01">
+        <ul class="text_box01">
+            <li>문창수</li>
+            <li>신명</li>
+            <li>캔버스에 아크릴 2021</li>
+            <li>53cm x 28cm</li>
+        </ul>
+        <p>경매 종료</p>
+    </section><!--text01-->
+    </li>       
+</ul> <!--box01-->
+
+<ul class="box01">
+    <li>
+       <a href="#"><img src="../img/end07.jpg" alt=""></a>
+       <section class="text01">
+        <ul class="text_box01">
+            <li>김종상</li>
+            <li>행복이 가득한</li>
+            <li>캔버스에 유채 1990</li>
+            <li>45cm x 38cm (8F)</li>
+        </ul>
+        <p>경매 종료</p>
+    </section><!--text01-->
+    </li>       
+</ul> <!--box01-->
+</div><!--sheet02-->
+</section>
+           
+<footer class="footer">
+    <div class="innerfooter">
+        <ul class="top">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">경매약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+        </ul>
+
+        <div class="middle">
+            (주)포털아트 ㅣ 서울시 강남구 논현로 101길 7 (역삼동, 중일빌딩 2F) <br>
+            대표이사 : 이창우 ㅣ 사업자등록번호 : 214-87-98176 <br>
+            통신판매업신고 : 제 2009-서울강남 03040호 <br>
+            대표전화 : 02-567-1890 팩스 : 02-567-6016 ㅣ 개인정보관리책임자 :김주광
+        </div>
+       
+        <footer class="icon">
+            <a href="#"><i class="xi-naver"></i></a>
+            <a href="#"><i class="xi-youtube-play"></i></a>
+        </footer>
+        <div class="bottom">
+            COPYRIGHTS &copy; 2012 PORTAL ART ALL RIGHTS RESERVED 
+        </div>
+    </div> <!--innerfooter-->
+</footer>
+<a href="#" class="return-top"><i class="xi-arrow-up"></i></a>
+</body>
+</html>

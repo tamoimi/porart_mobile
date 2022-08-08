@@ -1,0 +1,398 @@
+*{margin: 0;padding: 0;}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+a {text-decoration: none; color: black;}
+li {list-style: none;}
+body {font-family: 'Noto Sans KR', sans-serif;}
+
+
+
+/* ---------------header--------------- */
+
+.innerheader {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 999;
+}
+.logo {
+    width: 120px;
+    height: auto;
+    margin-left: 15px;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+    vertical-align:middle
+}
+/* ---------------checkbox--------------- */
+
+#hamBtn {display: none;}
+#search {display: none;}
+
+#search:checked ~ .searchOpen {display: none;}
+#search ~ .searchClose {display: none;}
+#search:checked ~ .searchClose {display: block;}
+
+#hamBtn:checked ~ .hamOpen {display: none;}
+#hamBtn ~ .hamClose {display: none;}
+#hamBtn:checked ~ .hamClose {display: block;}
+
+#hamBtn:checked ~ .menu {width: 200%;}
+#hamBtn ~ .menu {width: 0;}
+
+#search ~ .bg {height: 0;}
+#search:checked ~ .bg {height: 100%;}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    transition: all 0.8s;
+}
+label {
+    font-size: 24px;
+}
+.searchOpen, .searchClose {
+    position: absolute;
+    top: 0;
+    right: 60px;
+}
+.hamOpen, .hamClose {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+.search {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.search01 {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    text-align: center;
+}
+input {
+    width: 200px;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+button {
+    border: none;
+    background: none;
+}
+button i {
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+/* ---------------menu--------------- */
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 58px;
+    right: -100%;
+    transition: all 0.5s;
+    z-index: 998;
+    overflow: hidden;
+    background-color: white;
+}
+.menu01 {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: right;
+    background-color: #f5f5f5;
+    border-top: 1px solid #cccccc;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+.menu01 a {
+    color: #666;
+}
+.menu01 a:first-child, 
+.menu01 a:nth-child(2) {
+    margin-right: 10px;
+}
+.lnb li{
+    padding-left: 20px;
+    border-top: 1px solid #cccccc;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu02 {
+    border-top: 1px solid #cccccc;
+    padding-left: 20px;
+}
+.menu02 a {
+    color: #888;
+}
+.menu02 a:first-child {
+    margin-right: 10px;
+}
+
+/* ---------------main_visual--------------- */
+
+.main_visual {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: auto;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 60px;
+}
+.main_visual::-webkit-scrollbar {
+    display: none;
+}
+.main_visual li {
+    display: inline-block;
+}
+.main_visual img {
+    display: block;
+    width: 100%;
+}
+.main_visual .main_text {
+    position: absolute;
+    bottom: 4px;
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;   
+}
+.main_visual p {
+    color: white;   
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+/* ---------------section--------------- */
+.mi_box {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.mi_box p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* ---------------radio--------------- */
+/* section {width: 100%;} */
+
+#tab01, #tab02, #tab03, #tab04 {display: none;}
+
+#tab01:checked ~ .sheet .sheet01 {display: block;}
+#tab02:checked ~ .sheet .sheet02 {display: block;}
+#tab03:checked ~ .sheet .sheet03 {display: block;}
+#tab04:checked ~ .sheet .sheet04 {display: block;}
+
+
+#tab01:checked ~ .label .lab01 {
+    color: #EC912C;
+}
+#tab02:checked ~ .label .lab02 {
+    color: #EC912C;
+}
+#tab03:checked ~ .label .lab03 {
+    color: #EC912C;
+}
+#tab04:checked ~ .label .lab04 {
+    color: #EC912C;
+}
+
+.label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.label label {
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+.sheet div {
+    display: none;
+}
+.img01 {
+    width: calc(100%-20px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.img01 li {
+    width: 48.5%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.img01 li:nth-child(5),
+.img01 li:nth-child(6) {
+    margin-bottom: 0;
+}
+.img01 li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.more {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more p {
+    width: 100px;
+    height: 40px;
+    background-color: #eeeeee;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+
+/* ---------------info--------------- */
+
+.info .info01 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.info .info02 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.info .info01 img,
+.info .info02 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.info01-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 40% 0 0 20px;
+}
+.info01-1 h2 {margin-bottom: 10px;}
+.info02-1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 40% 0 0 20px;
+}
+.info02-1 h2 {margin-bottom: 10px;}
+.info a {
+    color: white;
+}
+/* ---------------notice--------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------footer--------------- */
+
+.footer {
+    background-color: #f5f5f5;
+}
+.innerfooter .top {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    line-height: 60px;
+}
+.top li {
+    font-size: 18px;
+    font-weight: 700;
+}
+.top li:first-child:after,
+.top li:nth-child(2):after {
+    content: "I";
+    margin: 0 10px;
+}
+.middle {
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    color: #333;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.icon {
+    font-size: 30px;
+    text-align: center;
+}
+.icon a {
+    color: white;
+}
+.icon i {
+    background: #666;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px 20px;
+}
+.bottom {
+    height: 30px;
+    font-size: 12px;
+    letter-spacing: -0.05em;
+    color: #333;
+    text-align: center;
+    margin: 0 10px;
+}
+
+/* ---------------top button--------------- */
+a.return-top { 
+    width: 35px;
+    height: 35px;
+    position:fixed; 
+    right:20px; 
+    bottom:20px; 
+    border-radius: 50%;
+    z-index:998; 
+    color: #333;
+    background-color: #ddd;
+    text-align: center;
+}
+a.return-top i {
+    font-size: 25px;
+    line-height: 35px;
+}
