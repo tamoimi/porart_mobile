@@ -191,7 +191,6 @@ button i {
     font-weight: 700;
 }
 
-
 /* ---------------radio--------------- */
 /* section {width: 100%;} */
 
@@ -231,6 +230,7 @@ button i {
     font-weight: 700;
     margin: 0 10px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .sheet div {
     display: none;
@@ -270,6 +270,7 @@ button i {
     text-align: center;
     line-height: 40px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 
